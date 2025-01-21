@@ -1,0 +1,52 @@
+.hero-item {
+
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 20rem;
+
+    display: inline-block;
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        /* Asegura que no se desborde */
+        width: 100%;
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    &.hero-villain {
+        background-color: #663399;
+        color: #fff;
+    }
+
+    .hero-name {
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+
+    .hero-powerstats {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .hero-powerstats span {
+        flex: 1;
+        /* Ocupa el máximo espacio posible */
+        text-align: left;
+        /* Alinea el texto a la izquierda */
+    }
+
+    .hero-powerstats-buttons {
+        padding: 5px 8px;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+}
