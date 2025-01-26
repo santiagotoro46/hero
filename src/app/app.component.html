@@ -1,2 +1,4 @@
-<app-hero-list />
-<router-outlet />
+<div class="hero-page">
+    <app-hero-list [heroes] = "heroes" />
+    <app-hero-new-form (add)="addHero($event)" />
+</div>
